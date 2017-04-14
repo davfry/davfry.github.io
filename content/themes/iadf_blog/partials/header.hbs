@@ -1,0 +1,21 @@
+<div role='banner' class="header_iadf">
+    {{#if @blog.logo}}
+    <a class="logo_iadf" href="{{@blog.url}}">
+      <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+    </a>{{/if}}
+    <div class="title_description">
+      <h1 class="blogtitle_iadf">
+        <a title="{{@blog.title}}" href='{{@blog.url}}'>
+          {{{@blog.title}}}
+        </a>
+      </h1>
+      <p class="blogdescription_iadf">
+        {{@blog.description}}
+      </p>
+    </div>
+    {{#if pagination}}
+    <div class="pagination_iadf">
+    {{{pagination}}}
+    </div>
+    {{/if}}
+</div>

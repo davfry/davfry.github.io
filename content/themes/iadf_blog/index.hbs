@@ -1,0 +1,26 @@
+{{!< default}}
+{{> header}}
+<main class="main_iadf small-9 medium-6 columns" role="main">
+{{#foreach posts}}
+  <article class="article_iadf" role="article" itemscope itemtype="http://schema.org/Article">
+    <header class="postheader_iadf">
+      <!-- <time class="date_iadf" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+        {{date format='dddd DD MMM YYYY'}}
+      </time> -->
+      <h2 class="posttitle_iadf" itemprop="headline">
+        <a href="{{{url}}}" rel="bookmark">
+          {{title}}
+        </a>
+      </h2>
+    </header>
+    <div class="postcontent_iadf" itemprop="articleBody">
+      {{excerpt}}
+    </div>
+    {{#if tags}}
+    <div class="posttags_iadf">
+      Tags: {{tags separator=" "}}
+    </div>
+    {{/if}}
+  </article>
+  {{/foreach}}
+</main>
