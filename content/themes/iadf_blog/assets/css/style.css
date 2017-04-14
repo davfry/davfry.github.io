@@ -142,3 +142,23 @@ img {
     border: 0;
     max-width: 100%;
 }
+
+
+@media only screen and (max-width: 500px) {
+  .header_iadf {
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .main_iadf {
+    margin-top: 4rem;
+    overflow: visible;
+  }
+  .posttitle_iadf > a {
+    font-size: 2rem;
+  }
+
+}
