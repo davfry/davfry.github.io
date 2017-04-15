@@ -1,1 +1,1 @@
-Ghost Blog for iamdavefryer.com
+Ghost Blog for iamdavefryer.com 
